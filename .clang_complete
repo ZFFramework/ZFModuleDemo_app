@@ -11,8 +11,6 @@
 -I../ZFModule/ZF/ZFUIKit/zfsrc
 -I../ZFFramework/ZF/ZFUIWidget/zfsrc
 -I../ZFModule/ZF/ZFUIWidget/zfsrc
--I../ZFFramework/ZF/ZFLua/zfsrc
--I../ZFModule/ZF/ZFLua/zfsrc
 -I../ZFFramework/ZF/ZFModuleDemo_lib/zfsrc
 -I../ZFModule/ZF/ZFModuleDemo_lib/zfsrc
 
@@ -24,6 +22,4 @@
 -I../ZFModule/ZF/ZFAlgorithm_impl/zfsrc
 -I../ZFFramework/ZF/ZFUIKit_impl/zfsrc
 -I../ZFModule/ZF/ZFUIKit_impl/zfsrc
--I../ZFFramework/ZF/ZFLua_impl/zfsrc
--I../ZFModule/ZF/ZFLua_impl/zfsrc
 

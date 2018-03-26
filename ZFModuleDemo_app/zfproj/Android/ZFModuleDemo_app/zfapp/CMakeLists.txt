@@ -30,12 +30,10 @@ ZFAddLib(${ZF_ROOT_PATH} ZFModuleDemo_app ZFAlgorithm)
 ZFAddLib(${ZF_ROOT_PATH} ZFModuleDemo_app ZFUtility)
 ZFAddLib(${ZF_ROOT_PATH} ZFModuleDemo_app ZFUIKit)
 ZFAddLib(${ZF_ROOT_PATH} ZFModuleDemo_app ZFUIWidget)
-ZFAddLib(${ZF_ROOT_PATH} ZFModuleDemo_app ZFLua)
 ZFAddLib(${ZF_ROOT_PATH} ZFModuleDemo_app ZFModuleDemo_lib)
 
 ZFAddLib(${ZF_ROOT_PATH} ZFModuleDemo_app ZF_impl)
 ZFAddLib(${ZF_ROOT_PATH} ZFModuleDemo_app ZFCore_impl)
 ZFAddLib(${ZF_ROOT_PATH} ZFModuleDemo_app ZFAlgorithm_impl)
 ZFAddLib(${ZF_ROOT_PATH} ZFModuleDemo_app ZFUIKit_impl)
-ZFAddLib(${ZF_ROOT_PATH} ZFModuleDemo_app ZFLua_impl)
 

@@ -114,7 +114,7 @@ macx {
 }
 
 system($${_ZF_SCRIPT_CALL} $$system_path($$_PRO_FILE_PWD_/../../../../zfsetup.$${_ZF_SCRIPT_EXT}))
-system($${_ZF_SCRIPT_CALL} $$system_path($$ZF_TOOLS_PATH/release/release_$${_ZF_QT_TYPE}_check.$${_ZF_SCRIPT_EXT}))
+system($${_ZF_SCRIPT_CALL} $$system_path($$ZF_TOOLS_PATH/release/release_$${_ZF_QT_TYPE}.$${_ZF_SCRIPT_EXT}) 1)
 
 CONFIG(debug, debug|release) {
     _ZF_BUILD_TYPE=debug
@@ -198,11 +198,6 @@ QMAKE_POST_LINK += $$_ZF_copy_res $$system_path($$ZF_ROOT_PATH/_release/$$_ZF_QT
 QMAKE_POST_LINK += $$_ZF_install_lib ZFUIWidget $$system_path($$ZF_ROOT_PATH/_release/$$_ZF_QT_TYPE/module/ZFUIWidget/lib) $$_ZF_LIB_DEPLOY_PATH $$escape_expand(\\n\\t)
 macx {QMAKE_POST_LINK += install_name_tool -change "libZFUIWidget.1.dylib" "@rpath/libZFUIWidget.dylib" $$system_path($$DESTDIR/"$$TARGET".app/Contents/MacOS/$$ZF_PROJ_NAME) $$escape_expand(\\n\\t)}
 
-LIBS += -L$$ZF_ROOT_PATH/_release/$$_ZF_QT_TYPE/all/lib $$_ZF_LINKER_FLAGS -lZFLua
-QMAKE_POST_LINK += $$_ZF_copy_res $$system_path($$ZF_ROOT_PATH/_release/$$_ZF_QT_TYPE/module/ZFLua/zfres) $$_ZF_RES_DEPLOY_PATH $$escape_expand(\\n\\t)
-QMAKE_POST_LINK += $$_ZF_install_lib ZFLua $$system_path($$ZF_ROOT_PATH/_release/$$_ZF_QT_TYPE/module/ZFLua/lib) $$_ZF_LIB_DEPLOY_PATH $$escape_expand(\\n\\t)
-macx {QMAKE_POST_LINK += install_name_tool -change "libZFLua.1.dylib" "@rpath/libZFLua.dylib" $$system_path($$DESTDIR/"$$TARGET".app/Contents/MacOS/$$ZF_PROJ_NAME) $$escape_expand(\\n\\t)}
-
 LIBS += -L$$ZF_ROOT_PATH/_release/$$_ZF_QT_TYPE/all/lib $$_ZF_LINKER_FLAGS -lZFModuleDemo_lib
 QMAKE_POST_LINK += $$_ZF_copy_res $$system_path($$ZF_ROOT_PATH/_release/$$_ZF_QT_TYPE/module/ZFModuleDemo_lib/zfres) $$_ZF_RES_DEPLOY_PATH $$escape_expand(\\n\\t)
 QMAKE_POST_LINK += $$_ZF_install_lib ZFModuleDemo_lib $$system_path($$ZF_ROOT_PATH/_release/$$_ZF_QT_TYPE/module/ZFModuleDemo_lib/lib) $$_ZF_LIB_DEPLOY_PATH $$escape_expand(\\n\\t)
@@ -229,11 +224,6 @@ LIBS += -L$$ZF_ROOT_PATH/_release/$$_ZF_QT_TYPE/all/lib $$_ZF_LINKER_FLAGS -lZFU
 QMAKE_POST_LINK += $$_ZF_copy_res $$system_path($$ZF_ROOT_PATH/_release/$$_ZF_QT_TYPE/module/ZFUIKit_impl/zfres) $$_ZF_RES_DEPLOY_PATH $$escape_expand(\\n\\t)
 QMAKE_POST_LINK += $$_ZF_install_lib ZFUIKit_impl $$system_path($$ZF_ROOT_PATH/_release/$$_ZF_QT_TYPE/module/ZFUIKit_impl/lib) $$_ZF_LIB_DEPLOY_PATH $$escape_expand(\\n\\t)
 macx {QMAKE_POST_LINK += install_name_tool -change "libZFUIKit_impl.1.dylib" "@rpath/libZFUIKit_impl.dylib" $$system_path($$DESTDIR/"$$TARGET".app/Contents/MacOS/$$ZF_PROJ_NAME) $$escape_expand(\\n\\t)}
-
-LIBS += -L$$ZF_ROOT_PATH/_release/$$_ZF_QT_TYPE/all/lib $$_ZF_LINKER_FLAGS -lZFLua_impl
-QMAKE_POST_LINK += $$_ZF_copy_res $$system_path($$ZF_ROOT_PATH/_release/$$_ZF_QT_TYPE/module/ZFLua_impl/zfres) $$_ZF_RES_DEPLOY_PATH $$escape_expand(\\n\\t)
-QMAKE_POST_LINK += $$_ZF_install_lib ZFLua_impl $$system_path($$ZF_ROOT_PATH/_release/$$_ZF_QT_TYPE/module/ZFLua_impl/lib) $$_ZF_LIB_DEPLOY_PATH $$escape_expand(\\n\\t)
-macx {QMAKE_POST_LINK += install_name_tool -change "libZFLua_impl.1.dylib" "@rpath/libZFLua_impl.dylib" $$system_path($$DESTDIR/"$$TARGET".app/Contents/MacOS/$$ZF_PROJ_NAME) $$escape_expand(\\n\\t)}
 
 
 # ======================================================================
