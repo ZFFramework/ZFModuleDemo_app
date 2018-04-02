@@ -169,12 +169,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAC32F17B6797379D61E2B987168C686 /* Build configuration list for PBXNativeTarget "ZFModuleDemo_app" */;
 			buildPhases = (
-				B371F540027B2AF15AF12F5580D55415 /* ZFSetup */,
-				EBF47A5E5E02DBF016F9DCA703E13F4E /* ZFCompileSource */,
+				1DFB865AB351E6A38946A93E85ACA392 /* ZFSetup */,
 				5D3F7BBDA4B37B5D3AD37EA4FCCDAA35 /* Sources */,
 				1F2A3ED4A20CC4190D8AE349BDFFB898 /* Frameworks */,
 				086FE860A8B6DB5BAA235820FF7241AF /* Resources */,
-				BCCD30F6E40A17CEB63863AA5EB977F6 /* ZFCopyResource */,
 				DB2996889EF38CD30F9D9B4204EE0DA1 /* ZFUniqueProj */,
 			);
 			buildRules = (
@@ -237,7 +235,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B371F540027B2AF15AF12F5580D55415 /* ZFSetup */ = {
+		1DFB865AB351E6A38946A93E85ACA392 /* ZFSetup */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -249,21 +247,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "sh \"${SRCROOT}/../../../../zfsetup.sh\"\nsh \"${SRCROOT}/../../../../../ZFFramework/tools/release/release_iOS.sh\" 1\n";
-		};
-		BCCD30F6E40A17CEB63863AA5EB977F6 /* ZFCopyResource */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = ZFCopyResource;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "sh ${SRCROOT}/ZFModuleDemo_app.xcodeproj/ZFCopyResource.sh ${SRCROOT} ${CONFIGURATION_BUILD_DIR} ${CONTENTS_FOLDER_PATH}";
+			shellScript = "sh \"${SRCROOT}/../../../../zfsetup.sh\"\nsh \"${SRCROOT}/../../../../../ZFFramework/tools/release/release_iOS.sh\" 1\nsh ${SRCROOT}/ZFModuleDemo_app.xcodeproj/zfsetup.sh ${SRCROOT} ${CONFIGURATION_BUILD_DIR} ${CONTENTS_FOLDER_PATH}\n";
 		};
 		DB2996889EF38CD30F9D9B4204EE0DA1 /* ZFUniqueProj */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -278,20 +262,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "sh ${SRCROOT}/../../../../../ZFFramework/tools/spec/iOS/unique_proj.sh \"${SRCROOT}/${PROJECT_NAME}.xcodeproj\"";
-		};
-		EBF47A5E5E02DBF016F9DCA703E13F4E /* ZFCompileSource */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = ZFCompileSource;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "sh ${SRCROOT}/ZFModuleDemo_app.xcodeproj/ZFCompileSource.sh ${SRCROOT}";
 		};
 /* End PBXShellScriptBuildPhase section */
 
