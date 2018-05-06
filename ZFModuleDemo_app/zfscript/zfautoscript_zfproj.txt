@@ -1,0 +1,21 @@
+ZF_NAME = ZFModuleDemo_app
+ZF_TYPE = app
+
+ZF_OUTPUT = ../..
+ZF_INPLACE = 1
+ZF_INPLACE_SRC = $ZF_NAME
+
+ZF_LIB += ZFCore
+ZF_LIB += ZFAlgorithm
+ZF_LIB += ZFUtility
+ZF_LIB += ZFUIKit
+ZF_LIB += ZFUIWidget
+ZF_LIB += ZFModuleDemo_lib
+
+ZF_IMPL += ZF_impl
+ZF_IMPL += ZFCore_impl
+ZF_IMPL += ZFAlgorithm_impl
+ZF_IMPL += ZFUIKit_impl
+
+ZF_EXT += https://github.com/ZFFramework/ZFModuleDemo_lib ZFModuleDemo_lib master
+
