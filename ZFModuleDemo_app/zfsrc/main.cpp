@@ -11,6 +11,7 @@
 #include "ZFUIKit.h"
 #include "ZFUIWidget.h"
 #include "ZFModuleDemo_lib.h"
+#include "ZFImpl/default/ZFImpl_default_ZFModuleDemo_impl.h"
 
 static void myTestCode(void);
 
@@ -32,5 +33,6 @@ static void myTestCode(void)
     textView->textSet(demoFunc());
 
     zfLogTrimT() << demoFunc();
+    zfLogTrimT() << demoFuncFromImpl();
 }
 

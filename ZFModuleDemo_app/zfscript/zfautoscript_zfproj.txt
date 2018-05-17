@@ -10,12 +10,13 @@ ZF_LIB += ZFAlgorithm
 ZF_LIB += ZFUtility
 ZF_LIB += ZFUIKit
 ZF_LIB += ZFUIWidget
-ZF_LIB += ZFModuleDemo_lib
 
 ZF_IMPL += ZF_impl
 ZF_IMPL += ZFCore_impl
 ZF_IMPL += ZFAlgorithm_impl
 ZF_IMPL += ZFUIKit_impl
 
-ZF_EXT += https://github.com/ZFFramework/ZFModuleDemo_lib ZFModuleDemo_lib master
+ZF_LIB_EXT += https://github.com/ZFFramework/ZFModuleDemo_lib ZFModuleDemo_lib master
+
+ZF_IMPL_EXT += https://github.com/ZFFramework/ZFModuleDemo_impl
 

@@ -22,4 +22,5 @@
 
 <ZF_COMMENT> <ZF_SH> "<ZF_ROOT_PATH>\tools\util\zfmodule.<ZF_SH_EXT>" https://github.com/YourUserName/YourLibName
 <ZF_SH> "<ZF_ROOT_PATH>\tools\util\zfmodule.<ZF_SH_EXT>" https://github.com/ZFFramework/ZFModuleDemo_lib ZFModuleDemo_lib master
+<ZF_SH> "<ZF_ROOT_PATH>\tools\util\zfmodule.<ZF_SH_EXT>" https://github.com/ZFFramework/ZFModuleDemo_impl
 

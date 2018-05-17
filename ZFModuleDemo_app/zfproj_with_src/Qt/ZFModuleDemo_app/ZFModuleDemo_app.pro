@@ -83,31 +83,38 @@ macx {
 }
 
 defineReplace(ZFAddLib) {
-    _ZF_IS_IMPL=$$1
-    _ZF_LIBNAME=$$2
-    LIBS += -L$$ZF_ROOT_PATH/_release/$$_ZF_QT_TYPE/all/lib -l$$_ZF_LIBNAME
-    export(LIBS)
-    QMAKE_POST_LINK += $$_ZF_SCRIPT_CALL $$system_path($$ZF_TOOLS_PATH/util/copy_res.$$_ZF_SCRIPT_EXT) $$system_path($$ZF_ROOT_PATH/_release/$$_ZF_QT_TYPE/module/$$_ZF_LIBNAME/zfres) $$_ZF_RES_DEPLOY_PATH $$escape_expand(\\n\\t)
-    QMAKE_POST_LINK += $$_ZF_SCRIPT_CALL $$system_path($$ZF_TOOLS_PATH/spec/Qt/install_lib.$$_ZF_SCRIPT_EXT) $$_ZF_LIBNAME $$system_path($$ZF_ROOT_PATH/_release/$$_ZF_QT_TYPE/module/$$_ZF_LIBNAME/lib) $$_ZF_LIB_DEPLOY_PATH $$escape_expand(\\n\\t)
-    macx {
-        QMAKE_POST_LINK += install_name_tool -change "lib$$_ZF_LIBNAME.1.dylib" "@rpath/lib$$_ZF_LIBNAME.dylib" $$system_path($$_ZF_DESTDIR/"$$TARGET".app/Contents/MacOS/$$ZF_PROJ_NAME) $$escape_expand(\\n\\t)
+    _ZF_MODULE_PATH=$$1
+    _ZF_IS_IMPL=$$2
+    _ZF_LIBNAME=$$3
+    equals(_ZF_IS_IMPL, 1) {
+        ZF_PROJ_SRC_EXT_PATH += $$_ZF_MODULE_PATH/ZF/$$_ZF_LIBNAME/zfsrc
+        ZF_PROJ_SRC_EXT_PATH += $$_ZF_MODULE_PATH/ZF/$$_ZF_LIBNAME/zfsrc_ext
+        export(ZF_PROJ_SRC_EXT_PATH)
+    } else {
+        ZF_PROJ_SRC_PATH += $$_ZF_MODULE_PATH/ZF/$$_ZF_LIBNAME/zfsrc
+        export(ZF_PROJ_SRC_PATH)
+        ZF_PROJ_SRC_EXT_PATH += $$_ZF_MODULE_PATH/ZF/$$_ZF_LIBNAME/zfsrc_ext
+        export(ZF_PROJ_SRC_EXT_PATH)
     }
+    INCLUDEPATH += $$_ZF_MODULE_PATH/ZF/$$_ZF_LIBNAME/zfsrc
+    export(INCLUDEPATH)
+    QMAKE_POST_LINK += $$_ZF_SCRIPT_CALL $$system_path($$ZF_TOOLS_PATH/util/copy_res.$$_ZF_SCRIPT_EXT) $$system_path($$_ZF_MODULE_PATH/ZF/$$_ZF_LIBNAME/zfres) $$_ZF_RES_DEPLOY_PATH $$escape_expand(\\n\\t)
     export(QMAKE_POST_LINK)
     return (true)
 }
 
 # ZF dependency
-$$ZFAddLib(0, ZFCore)
-$$ZFAddLib(0, ZFAlgorithm)
-$$ZFAddLib(0, ZFUtility)
-$$ZFAddLib(0, ZFUIKit)
-$$ZFAddLib(0, ZFUIWidget)
-$$ZFAddLib(1, ZF_impl)
-$$ZFAddLib(1, ZFCore_impl)
-$$ZFAddLib(1, ZFAlgorithm_impl)
-$$ZFAddLib(1, ZFUIKit_impl)
-$$ZFAddLib(0, ZFModuleDemo_lib)
-$$ZFAddLib(1, ZFModuleDemo_impl)
+$$ZFAddLib($$ZF_ROOT_PATH, 0, ZFCore)
+$$ZFAddLib($$ZF_ROOT_PATH, 0, ZFAlgorithm)
+$$ZFAddLib($$ZF_ROOT_PATH, 0, ZFUtility)
+$$ZFAddLib($$ZF_ROOT_PATH, 0, ZFUIKit)
+$$ZFAddLib($$ZF_ROOT_PATH, 0, ZFUIWidget)
+$$ZFAddLib($$ZF_ROOT_PATH, 1, ZF_impl)
+$$ZFAddLib($$ZF_ROOT_PATH, 1, ZFCore_impl)
+$$ZFAddLib($$ZF_ROOT_PATH, 1, ZFAlgorithm_impl)
+$$ZFAddLib($$ZF_ROOT_PATH, 1, ZFUIKit_impl)
+$$ZFAddLib($$ZF_ROOT_PATH/../ZFModule, 0, ZFModuleDemo_lib)
+$$ZFAddLib($$ZF_ROOT_PATH/../ZFModule, 1, ZFModuleDemo_impl)
 
 
 # ======================================================================
@@ -123,7 +130,6 @@ QT += gui widgets
 # no need to change these
 # ======================================================================
 INCLUDEPATH += $$_PRO_FILE_PWD_/../../../zfsrc
-INCLUDEPATH += $$ZF_ROOT_PATH/_release/$$_ZF_QT_TYPE/all/include
 
 QT += core
 
@@ -148,7 +154,6 @@ UI_DIR = $${DESTDIR}/.ui
 
 # ======================================================================
 system($${_ZF_SCRIPT_CALL} $$system_path($$_PRO_FILE_PWD_/../../../../zfsetup.$${_ZF_SCRIPT_EXT}))
-system($${_ZF_SCRIPT_CALL} $$system_path($$ZF_TOOLS_PATH/release/release_$${_ZF_QT_TYPE}.$${_ZF_SCRIPT_EXT}) 1)
 
 exists(qt_main.cpp) {
     SOURCES += qt_main.cpp

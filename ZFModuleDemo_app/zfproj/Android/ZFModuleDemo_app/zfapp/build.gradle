@@ -31,11 +31,12 @@ android {
             jniLibs.srcDirs += ZF_ROOT_PATH + '/_release/Android/module/ZFUtility/src/main/jniLibs'
             jniLibs.srcDirs += ZF_ROOT_PATH + '/_release/Android/module/ZFUIKit/src/main/jniLibs'
             jniLibs.srcDirs += ZF_ROOT_PATH + '/_release/Android/module/ZFUIWidget/src/main/jniLibs'
-            jniLibs.srcDirs += ZF_ROOT_PATH + '/_release/Android/module/ZFModuleDemo_lib/src/main/jniLibs'
             jniLibs.srcDirs += ZF_ROOT_PATH + '/_release/Android/module/ZF_impl/src/main/jniLibs'
             jniLibs.srcDirs += ZF_ROOT_PATH + '/_release/Android/module/ZFCore_impl/src/main/jniLibs'
             jniLibs.srcDirs += ZF_ROOT_PATH + '/_release/Android/module/ZFAlgorithm_impl/src/main/jniLibs'
             jniLibs.srcDirs += ZF_ROOT_PATH + '/_release/Android/module/ZFUIKit_impl/src/main/jniLibs'
+            jniLibs.srcDirs += ZF_ROOT_PATH + '/_release/Android/module/ZFModuleDemo_lib/src/main/jniLibs'
+            jniLibs.srcDirs += ZF_ROOT_PATH + '/_release/Android/module/ZFModuleDemo_impl/src/main/jniLibs'
         }
     }
     externalNativeBuild {
@@ -52,11 +53,12 @@ dependencies {
     implementation fileTree(dir: ZF_ROOT_PATH + '/_release/Android/module/ZFUtility/src/main/libs', includes: ['*.jar'])
     implementation fileTree(dir: ZF_ROOT_PATH + '/_release/Android/module/ZFUIKit/src/main/libs', includes: ['*.jar'])
     implementation fileTree(dir: ZF_ROOT_PATH + '/_release/Android/module/ZFUIWidget/src/main/libs', includes: ['*.jar'])
-    implementation fileTree(dir: ZF_ROOT_PATH + '/_release/Android/module/ZFModuleDemo_lib/src/main/libs', includes: ['*.jar'])
     implementation fileTree(dir: ZF_ROOT_PATH + '/_release/Android/module/ZF_impl/src/main/libs', includes: ['*.jar'])
     implementation fileTree(dir: ZF_ROOT_PATH + '/_release/Android/module/ZFCore_impl/src/main/libs', includes: ['*.jar'])
     implementation fileTree(dir: ZF_ROOT_PATH + '/_release/Android/module/ZFAlgorithm_impl/src/main/libs', includes: ['*.jar'])
     implementation fileTree(dir: ZF_ROOT_PATH + '/_release/Android/module/ZFUIKit_impl/src/main/libs', includes: ['*.jar'])
+    implementation fileTree(dir: ZF_ROOT_PATH + '/_release/Android/module/ZFModuleDemo_lib/src/main/libs', includes: ['*.jar'])
+    implementation fileTree(dir: ZF_ROOT_PATH + '/_release/Android/module/ZFModuleDemo_impl/src/main/libs', includes: ['*.jar'])
 }
 
 import org.apache.tools.ant.taskdefs.condition.Os
@@ -110,11 +112,12 @@ task ZFSetup {
         ZFCopyRes('ZFUtility')
         ZFCopyRes('ZFUIKit')
         ZFCopyRes('ZFUIWidget')
-        ZFCopyRes('ZFModuleDemo_lib')
         ZFCopyRes('ZF_impl')
         ZFCopyRes('ZFCore_impl')
         ZFCopyRes('ZFAlgorithm_impl')
         ZFCopyRes('ZFUIKit_impl')
+        ZFCopyRes('ZFModuleDemo_lib')
+        ZFCopyRes('ZFModuleDemo_impl')
     }
 }
 preBuild.dependsOn ZFSetup
