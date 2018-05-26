@@ -32,7 +32,7 @@ static void myTestCode(void)
     textView->layoutParam()->layoutAlignSet(ZFUIAlign::e_Center);
     textView->textSet(demoFunc());
 
-    zfLogTrimT() << demoFunc();
-    zfLogTrimT() << demoFuncFromImpl();
+    zfLogT() << demoFunc();
+    zfLogT() << demoFuncFromImpl();
 }
 
