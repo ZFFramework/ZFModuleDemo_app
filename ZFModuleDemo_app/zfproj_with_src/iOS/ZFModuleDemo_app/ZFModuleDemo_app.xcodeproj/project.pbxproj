@@ -318,6 +318,7 @@
 					"${SRCROOT}/../../../../../ZFModule/ZF/ZFModuleDemo_lib/zfsrc",
 					"${SRCROOT}/../../../../../ZFModule/ZF/ZFModuleDemo_impl/zfsrc",
 				);
+				WARNING_CFLAGS = "-Wpartial-availability";
 			};
 			name = Debug;
 		};
@@ -355,6 +356,7 @@
 					"${SRCROOT}/../../../../../ZFModule/ZF/ZFModuleDemo_lib/zfsrc",
 					"${SRCROOT}/../../../../../ZFModule/ZF/ZFModuleDemo_impl/zfsrc",
 				);
+				WARNING_CFLAGS = "-Wpartial-availability";
 			};
 			name = Release;
 		};
