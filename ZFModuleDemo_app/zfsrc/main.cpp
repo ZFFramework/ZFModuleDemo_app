@@ -20,8 +20,8 @@ static void myTestCode(void)
 
     zfblockedAlloc(ZFUITextView, textView);
     window->childAdd(textView);
-    textView->layoutParam()->layoutAlignSet(ZFUIAlign::e_Center);
-    textView->textSet(demoFunc());
+    textView->layoutParam()->layoutAlign(ZFUIAlign::e_Center);
+    textView->text(demoFunc());
 
     zfLogT() << demoFunc();
     zfLogT() << demoFuncFromImpl();
