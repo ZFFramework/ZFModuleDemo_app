@@ -6,11 +6,10 @@
 
 static void myTestCode(void);
 
-ZFMAIN_ENTRY(params)
+ZFMAIN_ENTRY()
 {
     // TODO: add your code here
     myTestCode();
-    return 0;
 }
 
 static void myTestCode(void)
