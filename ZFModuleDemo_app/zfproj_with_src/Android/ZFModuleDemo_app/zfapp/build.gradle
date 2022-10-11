@@ -53,7 +53,6 @@ android {
             path 'CMakeLists.txt'
         }
     }
-    buildToolsVersion '29.0.3'
 }
 
 dependencies {
