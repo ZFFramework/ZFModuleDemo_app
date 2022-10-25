@@ -9,6 +9,7 @@
     <application
         android:icon="@mipmap/ic_launcher"
         android:label="ZFModuleDemo_app"
+        android:requestLegacyExternalStorage="true"
         android:usesCleartextTraffic="true">
         <activity android:name="com.ZFFramework.Android.ZFModuleDemo_app.Loader">
             <intent-filter>
