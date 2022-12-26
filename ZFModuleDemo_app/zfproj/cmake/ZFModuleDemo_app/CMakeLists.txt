@@ -13,10 +13,13 @@ file(GLOB_RECURSE srcfiles RELATIVE ${PROJECT_SOURCE_DIR}
     ${PROJECT_SOURCE_DIR}/../../../zfsrc_ext/*.cpp
     )
 include("${PROJECT_SOURCE_DIR}/zfprojConfig.cmake" OPTIONAL)
-if(DEFINED zfprojConfig)
-    zfprojConfig(ZFModuleDemo_app srcfiles)
+if(COMMAND zfprojConfigBefore_ZFModuleDemo_app)
+    zfprojConfigBefore_ZFModuleDemo_app(ZFModuleDemo_app srcfiles)
 endif()
 add_executable(ZFModuleDemo_app ${srcfiles})
+if(COMMAND zfprojConfigAfter_ZFModuleDemo_app)
+    zfprojConfigAfter_ZFModuleDemo_app(ZFModuleDemo_app)
+endif()
 set_target_properties(ZFModuleDemo_app PROPERTIES LINKER_LANGUAGE CXX)
 
 include_directories(${PROJECT_SOURCE_DIR}/../../../zfsrc)
