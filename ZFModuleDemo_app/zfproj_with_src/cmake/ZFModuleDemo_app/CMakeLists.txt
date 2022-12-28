@@ -3,6 +3,7 @@ project(ZFModuleDemo_app)
 message("Build with type: ${CMAKE_BUILD_TYPE}, path: ${PROJECT_SOURCE_DIR}")
 
 set(ZF_ROOT_PATH ${PROJECT_SOURCE_DIR}/../../../../../ZFFramework)
+include("${ZF_ROOT_PATH}/tools/spec/cmake/util.cmake")
 
 if(WIN32)
     execute_process(COMMAND "${ZF_ROOT_PATH}/zfsetup.bat")
@@ -47,8 +48,9 @@ if(COMMAND zfprojConfigBefore_ZFModuleDemo_app)
     zfprojConfigBefore_ZFModuleDemo_app(ZFModuleDemo_app ZF_SRC_FILES)
 endif()
 add_executable(ZFModuleDemo_app ${ZF_SRC_FILES})
+strip_file_macro(ZFModuleDemo_app)
+set_target_properties(ZFModuleDemo_app PROPERTIES LINKER_LANGUAGE CXX)
 if(COMMAND zfprojConfigAfter_ZFModuleDemo_app)
     zfprojConfigAfter_ZFModuleDemo_app(ZFModuleDemo_app)
 endif()
-set_target_properties(ZFModuleDemo_app PROPERTIES LINKER_LANGUAGE CXX)
 

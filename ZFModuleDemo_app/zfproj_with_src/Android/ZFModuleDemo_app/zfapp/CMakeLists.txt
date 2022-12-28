@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.4.1)
 project(ZFModuleDemo_app)
 
 set(ZF_ROOT_PATH ${PROJECT_SOURCE_DIR}/../../../../../../ZFFramework)
+include("${ZF_ROOT_PATH}/tools/spec/cmake/util.cmake")
 
 function(ZFAddSrc ZF_SRC_FILES_ PROJ_PATH_)
     file(GLOB_RECURSE srcfiles RELATIVE ${PROJECT_SOURCE_DIR}
@@ -14,7 +15,6 @@ function(ZFAddSrc ZF_SRC_FILES_ PROJ_PATH_)
 
     include_directories(${PROJ_PATH_}/zfsrc)
 endfunction(ZFAddSrc)
-
 
 ZFAddSrc(ZF_SRC_FILES ${PROJECT_SOURCE_DIR}/../../../..)
 
@@ -31,7 +31,9 @@ ZFAddSrc(ZF_SRC_FILES ${ZF_ROOT_PATH}/../ZFModule/ZF/ZFModuleDemo_lib)
 ZFAddSrc(ZF_SRC_FILES ${ZF_ROOT_PATH}/../ZFModule/ZF/ZFModuleDemo_impl)
 
 add_library(ZFModuleDemo_app SHARED ${ZF_SRC_FILES})
+strip_file_macro(ZFModuleDemo_app)
 set_target_properties(ZFModuleDemo_app PROPERTIES LINKER_LANGUAGE CXX)
+
 find_library(log-lib log)
 find_library(android-lib android)
 target_link_libraries(ZFModuleDemo_app ${android-lib} ${log-lib})
