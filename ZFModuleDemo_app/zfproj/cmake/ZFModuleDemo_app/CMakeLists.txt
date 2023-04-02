@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.0.0)
+project(ZFModuleDemo_app)
 set(ZF_ROOT_PATH "${PROJECT_SOURCE_DIR}/../../../../../ZFFramework")
 include("${PROJECT_SOURCE_DIR}/zfprojConfig.cmake" OPTIONAL)
 if(COMMAND zfprojConfigGlobal_ZFModuleDemo_app)
     zfprojConfigGlobal_ZFModuleDemo_app()
 endif()
-project(ZFModuleDemo_app)
 message("Build with type: ${CMAKE_BUILD_TYPE}, path: ${PROJECT_SOURCE_DIR}")
 set(CMAKE_BUILD_WITH_INSTALL_RPATH TRUE)
 set(CMAKE_INSTALL_PREFIX "${PROJECT_SOURCE_DIR}/../../../../_tmp/cmake/ZFModuleDemo_app/app")
@@ -13,16 +13,16 @@ include("${ZF_ROOT_PATH}/tools/spec/cmake/util.cmake")
 
 execute_process(COMMAND sh "${ZF_ROOT_PATH}/tools/release/release_cmake.sh")
 
-file(GLOB_RECURSE srcfiles RELATIVE ${PROJECT_SOURCE_DIR}
+file(GLOB_RECURSE ZF_SRC_FILES RELATIVE ${PROJECT_SOURCE_DIR}
     ${PROJECT_SOURCE_DIR}/../../../zfsrc/*.c
     ${PROJECT_SOURCE_DIR}/../../../zfsrc/*.cpp
     ${PROJECT_SOURCE_DIR}/../../../zfsrc_ext/*.c
     ${PROJECT_SOURCE_DIR}/../../../zfsrc_ext/*.cpp
     )
 if(COMMAND zfprojConfigBefore_ZFModuleDemo_app)
-    zfprojConfigBefore_ZFModuleDemo_app(ZFModuleDemo_app srcfiles)
+    zfprojConfigBefore_ZFModuleDemo_app(ZFModuleDemo_app ZF_SRC_FILES)
 endif()
-add_executable(ZFModuleDemo_app ${srcfiles})
+add_executable(ZFModuleDemo_app ${ZF_SRC_FILES})
 zfprojStripFILE(ZFModuleDemo_app)
 set_target_properties(ZFModuleDemo_app PROPERTIES LINKER_LANGUAGE CXX)
 if(COMMAND zfprojConfigAfter_ZFModuleDemo_app)
