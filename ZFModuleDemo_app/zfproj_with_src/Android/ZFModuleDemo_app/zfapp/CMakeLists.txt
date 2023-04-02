@@ -31,7 +31,7 @@ ZFAddSrc(ZF_SRC_FILES ${ZF_ROOT_PATH}/../ZFModule/ZF/ZFModuleDemo_lib)
 ZFAddSrc(ZF_SRC_FILES ${ZF_ROOT_PATH}/../ZFModule/ZF/ZFModuleDemo_impl)
 
 add_library(ZFModuleDemo_app SHARED ${ZF_SRC_FILES})
-strip_file_macro(ZFModuleDemo_app)
+zfprojStripFILE(ZFModuleDemo_app)
 set_target_properties(ZFModuleDemo_app PROPERTIES LINKER_LANGUAGE CXX)
 
 find_library(log-lib log)
