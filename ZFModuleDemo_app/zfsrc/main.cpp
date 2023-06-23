@@ -21,7 +21,7 @@ static void myTestCode(void)
     window->childAdd(textView)->c_alignCenter();
     textView->text(demoFunc());
 
-    zfLogT() << demoFunc();
-    zfLogT() << demoFuncFromImpl();
+    zfLog() << demoFunc();
+    zfLog() << demoFuncFromImpl();
 }
 
