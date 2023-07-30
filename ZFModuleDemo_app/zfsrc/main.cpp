@@ -6,14 +6,12 @@
 
 static void myTestCode(void);
 
-ZFMAIN_ENTRY()
-{
+ZFMAIN_ENTRY() {
     // TODO: add your code here
     myTestCode();
 }
 
-static void myTestCode(void)
-{
+static void myTestCode(void) {
     zfblockedAlloc(ZFUIWindow, window);
     window->windowShow();
 
