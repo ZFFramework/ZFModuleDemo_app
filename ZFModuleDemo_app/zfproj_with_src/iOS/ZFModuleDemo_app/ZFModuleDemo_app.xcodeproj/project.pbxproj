@@ -166,7 +166,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAC32F17B6797379D61E2B987168C686 /* Build configuration list for PBXNativeTarget "ZFModuleDemo_app" */;
 			buildPhases = (
-				44A195DBB23778A5C9D6E501197C864F /* ZFSetup */,
+				E76CE63F125C7325AC24AA00EC6925D2 /* ZFSetup */,
 				5D3F7BBDA4B37B5D3AD37EA4FCCDAA35 /* Sources */,
 				1F2A3ED4A20CC4190D8AE349BDFFB898 /* Frameworks */,
 				086FE860A8B6DB5BAA235820FF7241AF /* Resources */,
@@ -233,7 +233,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		44A195DBB23778A5C9D6E501197C864F /* ZFSetup */ = {
+		DA2C967617245F8D5BC5E81170B44517 /* ZFUniqueProj */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = ZFUniqueProj;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh ${SRCROOT}/../../../../../ZFFramework/tools/spec/iOS/unique_proj.sh \"${SRCROOT}/${PROJECT_NAME}.xcodeproj\"\n";
+		};
+		E76CE63F125C7325AC24AA00EC6925D2 /* ZFSetup */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -258,22 +273,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "sh \"${SRCROOT}/../../../../zfsetup.sh\"\nsh ${SRCROOT}/ZFModuleDemo_app.xcodeproj/zfsetup.sh ${SRCROOT} ${CONFIGURATION_BUILD_DIR} ${CONTENTS_FOLDER_PATH}\n";
-		};
-		DA2C967617245F8D5BC5E81170B44517 /* ZFUniqueProj */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = ZFUniqueProj;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "sh ${SRCROOT}/../../../../../ZFFramework/tools/spec/iOS/unique_proj.sh \"${SRCROOT}/${PROJECT_NAME}.xcodeproj\"\n";
+			shellScript = "sh ${SRCROOT}/ZFModuleDemo_app.xcodeproj/zfsetup.sh ${SRCROOT} ${CONFIGURATION_BUILD_DIR} ${CONTENTS_FOLDER_PATH}\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
