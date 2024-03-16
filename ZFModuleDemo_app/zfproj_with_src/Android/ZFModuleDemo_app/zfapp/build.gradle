@@ -107,5 +107,7 @@ task ZFSetup {
         ZFCopyRes(ZF_ROOT_PATH + '/../ZFModule', 'ZFModuleDemo_impl')
     }
 }
-preBuild.dependsOn ZFSetup
+afterEvaluate {
+    preBuild.dependsOn ZFSetup
+}
 
