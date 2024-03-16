@@ -120,7 +120,5 @@ task ZFSetup {
         ZFCopyRes('ZFModuleDemo_impl')
     }
 }
-afterEvaluate {
-    preBuild.dependsOn ZFSetup
-}
+preBuild.dependsOn ZFSetup
 
