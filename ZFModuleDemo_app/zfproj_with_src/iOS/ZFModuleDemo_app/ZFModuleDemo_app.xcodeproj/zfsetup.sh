@@ -24,8 +24,8 @@ sh $ZF_ROOT_PATH/tools/common/unity_build.sh "${COMPILE_DST_PATH}/zfgensrc_ZF_im
 sh $ZF_ROOT_PATH/tools/common/unity_build.sh "${COMPILE_DST_PATH}/zfgensrc_ZFCore_impl.mm" "$ZF_ROOT_PATH/ZF/ZFCore_impl/zfsrc"
 sh $ZF_ROOT_PATH/tools/common/unity_build.sh "${COMPILE_DST_PATH}/zfgensrc_ZFAlgorithm_impl.mm" "$ZF_ROOT_PATH/ZF/ZFAlgorithm_impl/zfsrc"
 sh $ZF_ROOT_PATH/tools/common/unity_build.sh "${COMPILE_DST_PATH}/zfgensrc_ZFUIKit_impl.mm" "$ZF_ROOT_PATH/ZF/ZFUIKit_impl/zfsrc"
-sh $ZF_ROOT_PATH/tools/common/unity_build.sh "${COMPILE_DST_PATH}/zfgensrc_ZFModuleDemo_lib.mm" "$ZF_ROOT_PATH/../ZFModule/ZF/ZFModuleDemo_lib/zfsrc"
-sh $ZF_ROOT_PATH/tools/common/unity_build.sh "${COMPILE_DST_PATH}/zfgensrc_ZFModuleDemo_impl.mm" "$ZF_ROOT_PATH/../ZFModule/ZF/ZFModuleDemo_impl/zfsrc"
+sh $ZF_ROOT_PATH/tools/common/unity_build.sh "${COMPILE_DST_PATH}/zfgensrc_ZFModuleDemo_lib.mm" "$ZF_ROOT_PATH/ZFModule/ZFModuleDemo_lib/zfsrc"
+sh $ZF_ROOT_PATH/tools/common/unity_build.sh "${COMPILE_DST_PATH}/zfgensrc_ZFModuleDemo_impl.mm" "$ZF_ROOT_PATH/ZFModule/ZFModuleDemo_impl/zfsrc"
 
 RES_DST_PATH=${iOS_CONFIGURATION_BUILD_DIR}/${iOS_CONTENTS_FOLDER_PATH}/zfres
 sh "$ZF_ROOT_PATH/tools/util/copy_res.sh" "${iOS_SRCROOT}/../../../zfres" "$RES_DST_PATH"
@@ -39,6 +39,6 @@ sh "$ZF_ROOT_PATH/tools/util/copy_res.sh" "$ZF_ROOT_PATH/ZF/ZF_impl/zfres" "$RES
 sh "$ZF_ROOT_PATH/tools/util/copy_res.sh" "$ZF_ROOT_PATH/ZF/ZFCore_impl/zfres" "$RES_DST_PATH"
 sh "$ZF_ROOT_PATH/tools/util/copy_res.sh" "$ZF_ROOT_PATH/ZF/ZFAlgorithm_impl/zfres" "$RES_DST_PATH"
 sh "$ZF_ROOT_PATH/tools/util/copy_res.sh" "$ZF_ROOT_PATH/ZF/ZFUIKit_impl/zfres" "$RES_DST_PATH"
-sh "$ZF_ROOT_PATH/tools/util/copy_res.sh" "$ZF_ROOT_PATH/../ZFModule/ZF/ZFModuleDemo_lib/zfres" "$RES_DST_PATH"
-sh "$ZF_ROOT_PATH/tools/util/copy_res.sh" "$ZF_ROOT_PATH/../ZFModule/ZF/ZFModuleDemo_impl/zfres" "$RES_DST_PATH"
+sh "$ZF_ROOT_PATH/tools/util/copy_res.sh" "$ZF_ROOT_PATH/ZFModule/ZFModuleDemo_lib/zfres" "$RES_DST_PATH"
+sh "$ZF_ROOT_PATH/tools/util/copy_res.sh" "$ZF_ROOT_PATH/ZFModule/ZFModuleDemo_impl/zfres" "$RES_DST_PATH"
 

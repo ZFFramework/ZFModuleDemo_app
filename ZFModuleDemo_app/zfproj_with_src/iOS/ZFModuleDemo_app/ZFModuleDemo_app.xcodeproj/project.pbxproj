@@ -337,8 +337,8 @@
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFCore_impl/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFAlgorithm_impl/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFUIKit_impl/zfsrc",
-					"${SRCROOT}/../../../../../ZFModule/ZF/ZFModuleDemo_lib/zfsrc",
-					"${SRCROOT}/../../../../../ZFModule/ZF/ZFModuleDemo_impl/zfsrc",
+					"${SRCROOT}/../../../../../ZFFramework/ZFModule/ZFModuleDemo_lib/zfsrc",
+					"${SRCROOT}/../../../../../ZFFramework/ZFModule/ZFModuleDemo_impl/zfsrc",
 				);
 				WARNING_CFLAGS = "-Wpartial-availability";
 			};
@@ -378,8 +378,8 @@
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFCore_impl/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFAlgorithm_impl/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFUIKit_impl/zfsrc",
-					"${SRCROOT}/../../../../../ZFModule/ZF/ZFModuleDemo_lib/zfsrc",
-					"${SRCROOT}/../../../../../ZFModule/ZF/ZFModuleDemo_impl/zfsrc",
+					"${SRCROOT}/../../../../../ZFFramework/ZFModule/ZFModuleDemo_lib/zfsrc",
+					"${SRCROOT}/../../../../../ZFFramework/ZFModule/ZFModuleDemo_impl/zfsrc",
 				);
 				WARNING_CFLAGS = "-Wpartial-availability";
 			};

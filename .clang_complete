@@ -9,6 +9,6 @@
 -I../ZFFramework/ZF/ZFCore_impl/zfsrc
 -I../ZFFramework/ZF/ZFAlgorithm_impl/zfsrc
 -I../ZFFramework/ZF/ZFUIKit_impl/zfsrc
--I../ZFModule/ZF/ZFModuleDemo_lib/zfsrc
--I../ZFModule/ZF/ZFModuleDemo_impl/zfsrc
+-I../ZFFramework/ZFModule/ZFModuleDemo_lib/zfsrc
+-I../ZFFramework/ZFModule/ZFModuleDemo_impl/zfsrc
 
