@@ -68,3 +68,8 @@ if(COMMAND zfprojConfigAfter_ZFModuleDemo_app)
     zfprojConfigAfter_ZFModuleDemo_app(ZFModuleDemo_app)
 endif()
 
+# dllimport not work for app with all src, disable it explicitly
+foreach(LIB_NAME_ ${ZF_LIB_NAMES})
+    target_compile_definitions(ZFModuleDemo_app PUBLIC ZFLIB_${LIB_NAME_}=)
+endforeach()
+
