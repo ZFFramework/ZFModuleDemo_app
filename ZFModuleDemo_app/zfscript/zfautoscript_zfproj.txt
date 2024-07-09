@@ -10,6 +10,7 @@ ZF_LIB += ZFAlgorithm
 ZF_LIB += ZFUtility
 ZF_LIB += ZFUIKit
 ZF_LIB += ZFUIWidget
+ZF_LIB += ZFNet
 
 ZF_IMPL += ZF_impl
 ZF_IMPL += ZFCore_impl

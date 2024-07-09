@@ -99,6 +99,7 @@ task ZFSetup {
         ZFCopyRes(ZF_ROOT_PATH + '/ZF', 'ZFUtility')
         ZFCopyRes(ZF_ROOT_PATH + '/ZF', 'ZFUIKit')
         ZFCopyRes(ZF_ROOT_PATH + '/ZF', 'ZFUIWidget')
+        ZFCopyRes(ZF_ROOT_PATH + '/ZF', 'ZFNet')
         ZFCopyRes(ZF_ROOT_PATH + '/ZF', 'ZF_impl')
         ZFCopyRes(ZF_ROOT_PATH + '/ZF', 'ZFCore_impl')
         ZFCopyRes(ZF_ROOT_PATH + '/ZF', 'ZFAlgorithm_impl')

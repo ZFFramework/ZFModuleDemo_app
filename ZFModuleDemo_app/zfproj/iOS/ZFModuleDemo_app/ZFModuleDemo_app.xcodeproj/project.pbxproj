@@ -22,6 +22,7 @@
 		7E0D31803FC94A4D85ADED4234A5E39F /* ZFUIKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30DF9D7B9D66341302C4C4A28320465F /* ZFUIKit.xcframework */; };
 		A68237BEEFF077031D3D1D2D0F0EE45A /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A21631CE83C592315C21801BC9C7196 /* RootViewController.xib */; };
 		B17AFB3A4E5A19AFC8CABDCEF1DF2584 /* ZFAlgorithm.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86994E99C6A318754841A5F821ECBB9 /* ZFAlgorithm.xcframework */; };
+		B1D5D09F20AEC5DDE9C57667A51A373D /* ZFNet.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091A9320A4AC3CF70DFF546DDEA691AB /* ZFNet.xcframework */; };
 		BDE2E3B01A3B105DB73631E1CA094FC0 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4141CE69BF1CBA43A6E8F0B14B6F4350 /* AppDelegate.mm */; };
 		E46DEA15939C1584CB69C7D524F8BB86 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1FFF9A0842376A9931090281622A22 /* QuartzCore.framework */; };
 		EA386C0D1BF61C57705EEB5E8FD9783A /* ZFModuleDemo_lib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A43B46F6B4A0439A0A147D02184F52C /* ZFModuleDemo_lib.xcframework */; };
@@ -35,6 +36,7 @@
 		057350DF9833D09D2A7C09A7D4901F73 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		065FABFA46F3625BC080B62A6A5C3F5D /* ZFCore_impl.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ZFCore_impl.xcframework; path = ../../../../../ZFFramework/_release/iOS/all/lib/ZFCore_impl.xcframework; sourceTree = "<group>"; };
 		06F927531E8D57BA169ACE64BF5DB14A /* ZFUtility.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ZFUtility.xcframework; path = ../../../../../ZFFramework/_release/iOS/all/lib/ZFUtility.xcframework; sourceTree = "<group>"; };
+		091A9320A4AC3CF70DFF546DDEA691AB /* ZFNet.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ZFNet.xcframework; path = ../../../../../ZFFramework/_release/iOS/all/lib/ZFNet.xcframework; sourceTree = "<group>"; };
 		1A43B46F6B4A0439A0A147D02184F52C /* ZFModuleDemo_lib.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ZFModuleDemo_lib.xcframework; path = ../../../../../ZFFramework/_release/iOS/all/lib/ZFModuleDemo_lib.xcframework; sourceTree = "<group>"; };
 		2FC5D913BB824BCC1545B462F8FA6521 /* ZFUIKit_impl.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ZFUIKit_impl.xcframework; path = ../../../../../ZFFramework/_release/iOS/all/lib/ZFUIKit_impl.xcframework; sourceTree = "<group>"; };
 		30DF9D7B9D66341302C4C4A28320465F /* ZFUIKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ZFUIKit.xcframework; path = ../../../../../ZFFramework/_release/iOS/all/lib/ZFUIKit.xcframework; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				F932D1CFA8D5AAD9DC0EED65F4698E32 /* ZFCore_impl.xcframework in Frameworks */,
 				22049C2F63F1390723582937CCFE8B6C /* ZFModuleDemo_impl.xcframework in Frameworks */,
 				EA386C0D1BF61C57705EEB5E8FD9783A /* ZFModuleDemo_lib.xcframework in Frameworks */,
+				B1D5D09F20AEC5DDE9C57667A51A373D /* ZFNet.xcframework in Frameworks */,
 				7E0D31803FC94A4D85ADED4234A5E39F /* ZFUIKit.xcframework in Frameworks */,
 				341C4348EBD5B3451C9A84B75286DCD6 /* ZFUIKit_impl.xcframework in Frameworks */,
 				F5E030E7F956CB27955AD4859FFD9FA0 /* ZFUIWidget.xcframework in Frameworks */,
@@ -127,6 +130,7 @@
 				065FABFA46F3625BC080B62A6A5C3F5D /* ZFCore_impl.xcframework */,
 				7CE238B48B0C5097DCEA3D20D3D0B83D /* ZFModuleDemo_impl.xcframework */,
 				1A43B46F6B4A0439A0A147D02184F52C /* ZFModuleDemo_lib.xcframework */,
+				091A9320A4AC3CF70DFF546DDEA691AB /* ZFNet.xcframework */,
 				30DF9D7B9D66341302C4C4A28320465F /* ZFUIKit.xcframework */,
 				2FC5D913BB824BCC1545B462F8FA6521 /* ZFUIKit_impl.xcframework */,
 				B7269DB9CE485E1B4A043B3B1148856F /* ZFUIWidget.xcframework */,

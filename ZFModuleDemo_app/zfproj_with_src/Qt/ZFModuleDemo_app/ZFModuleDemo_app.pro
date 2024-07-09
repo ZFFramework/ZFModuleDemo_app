@@ -48,6 +48,7 @@ DEFINES += ZFLIB_ZFAlgorithm=
 DEFINES += ZFLIB_ZFUtility=
 DEFINES += ZFLIB_ZFUIKit=
 DEFINES += ZFLIB_ZFUIWidget=
+DEFINES += ZFLIB_ZFNet=
 DEFINES += ZFLIB_ZF_impl=
 DEFINES += ZFLIB_ZFCore_impl=
 DEFINES += ZFLIB_ZFAlgorithm_impl=
@@ -119,6 +120,7 @@ $$ZFAddLib($${ZF_ROOT_PATH}/ZF, 0, ZFAlgorithm)
 $$ZFAddLib($${ZF_ROOT_PATH}/ZF, 0, ZFUtility)
 $$ZFAddLib($${ZF_ROOT_PATH}/ZF, 0, ZFUIKit)
 $$ZFAddLib($${ZF_ROOT_PATH}/ZF, 0, ZFUIWidget)
+$$ZFAddLib($${ZF_ROOT_PATH}/ZF, 0, ZFNet)
 $$ZFAddLib($${ZF_ROOT_PATH}/ZF, 1, ZF_impl)
 $$ZFAddLib($${ZF_ROOT_PATH}/ZF, 1, ZFCore_impl)
 $$ZFAddLib($${ZF_ROOT_PATH}/ZF, 1, ZFAlgorithm_impl)
