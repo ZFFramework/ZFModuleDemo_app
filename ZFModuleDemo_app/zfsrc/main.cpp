@@ -13,10 +13,10 @@ ZFMAIN_ENTRY() {
 
 static void myTestCode(void) {
     zfobj<ZFUIWindow> window;
-    window->windowShow();
+    window->show();
 
     zfobj<ZFUITextView> textView;
-    window->childAdd(textView)->c_alignCenter();
+    window->child(textView)->c_alignCenter();
     textView->text(demoFunc());
 
     ZFLog() << demoFunc();
