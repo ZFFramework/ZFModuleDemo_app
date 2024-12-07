@@ -1,4 +1,4 @@
-name: Qt MacOS
+name: CMake MacOS
 
 on:
   push:
@@ -19,13 +19,11 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Setup Qt
-      uses: jurplel/install-qt-action@v4
-      with:
-        host: mac
-        target: desktop
-        modules: qtwebengine qtwebchannel qtpositioning
-        version: 6.5.3 # https://bugreports.qt.io/browse/QTBUG-117225
+    - name: get-cmake
+      uses: lukka/get-cmake@latest
+
+    - name: Set up NASM
+      uses: ilammy/setup-nasm@v1
 
     - name: ZFSetup
       run: |
@@ -34,6 +32,6 @@ jobs:
 
     - name: ZF build zfproj
       run: |
-        chmod +x ../ZFFramework/tools/buildapp/buildapp_Qt.sh
-        ../ZFFramework/tools/buildapp/buildapp_Qt.sh "${ZF_PROJ_NAME}" "${ZF_PROJ_PATH}"
+        chmod +x ../ZFFramework/tools/buildapp/buildapp_cmake.sh
+        ../ZFFramework/tools/buildapp/buildapp_cmake.sh "${ZF_PROJ_NAME}" "${ZF_PROJ_PATH}"
 

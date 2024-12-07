@@ -1,4 +1,4 @@
-name: Qt Windows with src
+name: CMake Windows
 
 on:
   push:
@@ -13,7 +13,7 @@ jobs:
     runs-on: windows-latest
     env:
       ZFCI_TOKEN: ${{secrets.ZFCI_TOKEN}}
-      ZF_PROJ_PATH: ZFModuleDemo_app/zfproj_with_src
+      ZF_PROJ_PATH: ZFModuleDemo_app/zfproj
       ZF_PROJ_NAME: ZFModuleDemo_app
 
     steps:
@@ -25,12 +25,14 @@ jobs:
         export-path-to-vcvarsall: VCVARSALL_PATH
         arch: x64
 
-    - name: Setup Qt
-      uses: jurplel/install-qt-action@v4
-      with:
-        host: windows
-        target: desktop
-        modules: qtwebengine
+    - name: get-cmake
+      uses: lukka/get-cmake@latest
+
+    - name: Set up NASM
+      uses: ilammy/setup-nasm@v1
+
+    - name: Install ninja-build tool
+      uses: seanmiddleditch/gha-setup-ninja@v5
 
     - name: ZFSetup
       run: |
@@ -38,5 +40,5 @@ jobs:
 
     - name: ZF build zfproj
       run: |
-        Invoke-Expression -Command 'cmd.exe /C "..\\ZFFramework\\tools\\buildapp\\buildapp_Qt.bat" "${env:ZF_PROJ_NAME}" "${env:ZF_PROJ_PATH}"'
+        Invoke-Expression -Command 'cmd.exe /C "..\\ZFFramework\\tools\\buildapp\\buildapp_cmake.bat" "${env:ZF_PROJ_NAME}" "${env:ZF_PROJ_PATH}"'
 

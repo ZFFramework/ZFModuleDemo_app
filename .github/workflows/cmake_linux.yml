@@ -1,4 +1,4 @@
-name: CMake
+name: CMake Linux
 
 on:
   push:
@@ -7,9 +7,6 @@ on:
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
-
-env:
-  BUILD_TYPE: Release
 
 jobs:
   build:
@@ -20,10 +17,13 @@ jobs:
       ZF_PROJ_NAME: ZFModuleDemo_app
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
     - name: get-cmake
       uses: lukka/get-cmake@latest
+
+    - name: Set up NASM
+      uses: ilammy/setup-nasm@v1
 
     - name: ZFSetup
       run: |
