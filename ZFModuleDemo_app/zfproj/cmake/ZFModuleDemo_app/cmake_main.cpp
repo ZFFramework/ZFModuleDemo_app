@@ -8,6 +8,19 @@
 #if ZF_ENV_sys_Windows
 #include <Windows.h>
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
+    LoadLibraryA("ZFCore");
+    LoadLibraryA("ZFAlgorithm");
+    LoadLibraryA("ZFUtility");
+    LoadLibraryA("ZFUIKit");
+    LoadLibraryA("ZFUIWidget");
+    LoadLibraryA("ZFNet");
+    LoadLibraryA("ZF_impl");
+    LoadLibraryA("ZFCore_impl");
+    LoadLibraryA("ZFAlgorithm_impl");
+    LoadLibraryA("ZFUIKit_impl");
+    LoadLibraryA("ZFModuleDemo_lib");
+    LoadLibraryA("ZFModuleDemo_impl");
+
     ZFFrameworkInit();
 
     ZFCoreArray<zfstring> params;
