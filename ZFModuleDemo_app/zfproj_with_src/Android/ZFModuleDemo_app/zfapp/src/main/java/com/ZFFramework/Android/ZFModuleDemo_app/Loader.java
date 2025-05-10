@@ -1,10 +1,10 @@
-package com.ZFFramework.Android.ZFModuleDemo_app;
+package com.ZFFramework.ZFModuleDemo_app;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Window;
 
-import com.ZFFramework.Android.ZF_impl.ZFMainEntry;
+import com.ZFFramework.ZF_impl.ZFMainEntry;
 
 public class Loader extends Activity {
     static {
