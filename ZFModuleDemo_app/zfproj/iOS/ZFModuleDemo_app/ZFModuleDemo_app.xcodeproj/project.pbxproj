@@ -20,6 +20,7 @@
 		5F228D64ECA27A6B9F271E7AF88E5B54 /* ZF_impl.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41E41DC9E3D6613CBC800C4440761C31 /* ZF_impl.xcframework */; };
 		605030C7ACD6E059E15C0DA7AD759BA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A5D4A48FBE45904870ABF56D77AC5E /* main.m */; };
 		7E0D31803FC94A4D85ADED4234A5E39F /* ZFUIKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30DF9D7B9D66341302C4C4A28320465F /* ZFUIKit.xcframework */; };
+		8D59D13C9BC77B1A5AC13CC5AE39DBD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED6FC6B1111D4B59D4B463E70E8FE08C /* Assets.xcassets */; };
 		A68237BEEFF077031D3D1D2D0F0EE45A /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A21631CE83C592315C21801BC9C7196 /* RootViewController.xib */; };
 		B17AFB3A4E5A19AFC8CABDCEF1DF2584 /* ZFAlgorithm.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86994E99C6A318754841A5F821ECBB9 /* ZFAlgorithm.xcframework */; };
 		B1D5D09F20AEC5DDE9C57667A51A373D /* ZFNet.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091A9320A4AC3CF70DFF546DDEA691AB /* ZFNet.xcframework */; };
@@ -59,6 +60,7 @@
 		E003ADAEF5108B6C97A03CF99248252A /* ZFAlgorithm_impl.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ZFAlgorithm_impl.xcframework; path = ../../../../../ZFFramework/_release/iOS/all/lib/ZFAlgorithm_impl.xcframework; sourceTree = "<group>"; };
 		E692A63B5D736C87D57F1EE11616ACBC /* ZFCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ZFCore.xcframework; path = ../../../../../ZFFramework/_release/iOS/all/lib/ZFCore.xcframework; sourceTree = "<group>"; };
 		E86994E99C6A318754841A5F821ECBB9 /* ZFAlgorithm.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ZFAlgorithm.xcframework; path = ../../../../../ZFFramework/_release/iOS/all/lib/ZFAlgorithm.xcframework; sourceTree = "<group>"; };
+		ED6FC6B1111D4B59D4B463E70E8FE08C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9AC18987938700D709F5A9747B3D743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +97,7 @@
 			children = (
 				42CBA018A23BA76009F2A677B75CCE25 /* AppDelegate.h */,
 				4141CE69BF1CBA43A6E8F0B14B6F4350 /* AppDelegate.mm */,
+				ED6FC6B1111D4B59D4B463E70E8FE08C /* Assets.xcassets */,
 				F9AC18987938700D709F5A9747B3D743 /* Info.plist */,
 				C55B067075E632758D1AE65E6F2DD508 /* LaunchScreen.storyboard */,
 				50657D02102D799E7D6827E56C537717 /* RootViewController.h */,
@@ -185,7 +188,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 2600;
 				ORGANIZATIONNAME = ZFFramework;
 				TargetAttributes = {
 					02A3F39018C57EF4D0C312047B2C50F9 = {
@@ -217,6 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D59D13C9BC77B1A5AC13CC5AE39DBD4 /* Assets.xcassets in Resources */,
 				A68237BEEFF077031D3D1D2D0F0EE45A /* RootViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +279,7 @@
 		02300C4B65B0533E2E399A09A24EDCEF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -296,8 +301,8 @@
 					"-Objc",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ZFFramework.ZFModuleDemo_app";
-				PRODUCT_NAME = "ZFModuleDemo_app";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZFFramework.ZFModuleDemo_app;
+				PRODUCT_NAME = ZFModuleDemo_app;
 				USER_HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"${SRCROOT}/../../../zfsrc",
@@ -310,6 +315,7 @@
 		41578E2A2FD13BCBB1A0EAA0A994749B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -331,8 +337,8 @@
 					"-Objc",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ZFFramework.ZFModuleDemo_app";
-				PRODUCT_NAME = "ZFModuleDemo_app";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZFFramework.ZFModuleDemo_app;
+				PRODUCT_NAME = ZFModuleDemo_app;
 				USER_HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"${SRCROOT}/../../../zfsrc",
@@ -375,6 +381,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -393,6 +400,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 			};
 			name = Debug;
 		};
@@ -429,6 +437,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -440,6 +449,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
