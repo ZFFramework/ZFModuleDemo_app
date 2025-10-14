@@ -13,7 +13,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
     LoadLibraryA("ZFUtility");
     LoadLibraryA("ZFUIKit");
     LoadLibraryA("ZFUIWidget");
-    LoadLibraryA("ZFNet");
     LoadLibraryA("ZF_impl");
     LoadLibraryA("ZFCore_impl");
     LoadLibraryA("ZFAlgorithm_impl");

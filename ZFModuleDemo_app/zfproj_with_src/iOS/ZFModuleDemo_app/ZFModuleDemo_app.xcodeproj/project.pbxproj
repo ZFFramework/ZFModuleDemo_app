@@ -26,7 +26,6 @@
 		BAF83C8FD40984D84AA9044934CCFB9C /* zfgensrc_ZFCore.mm in Sources */ = {isa = PBXBuildFile; fileRef = 50A2B026A64256E301B930B16113FD8A /* zfgensrc_ZFCore.mm */; };
 		BDE2E3B01A3B105DB73631E1CA094FC0 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4141CE69BF1CBA43A6E8F0B14B6F4350 /* AppDelegate.mm */; };
 		C5A42445A50E2AFC7607CC6912283129 /* zfgensrc_ZFModuleDemo_impl.mm in Sources */ = {isa = PBXBuildFile; fileRef = EE1F24F837B3FED9137FA991FA4DC5A0 /* zfgensrc_ZFModuleDemo_impl.mm */; };
-		DFDBA7225C12438AC96D23D1FB4B8B5D /* zfgensrc_ZFNet.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8629DFE928F04273F06117A3E2F8D195 /* zfgensrc_ZFNet.mm */; };
 		E46DEA15939C1584CB69C7D524F8BB86 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1FFF9A0842376A9931090281622A22 /* QuartzCore.framework */; };
 		EAC1484A025D5036106B69C59C4BCFA7 /* zfgensrc_ZFModuleDemo_app.mm in Sources */ = {isa = PBXBuildFile; fileRef = 73FD77CCC236E35B65325CA31BED8E9A /* zfgensrc_ZFModuleDemo_app.mm */; };
 		FC5605980C48F88CEA779E9DF21CEA05 /* zfgensrc_ZFAlgorithm.mm in Sources */ = {isa = PBXBuildFile; fileRef = D346C47E08BDA86C8F92009162AE4661 /* zfgensrc_ZFAlgorithm.mm */; };
@@ -48,7 +47,6 @@
 		78D107BF34B0A5F7D8937B82C1AE16BB /* ZFModuleDemo_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZFModuleDemo_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81BC6B4B561D79ED4698B96687C427B6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		8477E7DB2CB2D411405AEED48701BF12 /* zfgensrc_ZFAlgorithm_impl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFAlgorithm_impl.mm; sourceTree = "<group>"; };
-		8629DFE928F04273F06117A3E2F8D195 /* zfgensrc_ZFNet.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFNet.mm; sourceTree = "<group>"; };
 		9246F3D76D738929816BD97B020D7F6B /* zfgensrc_ZFUIKit_impl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFUIKit_impl.mm; sourceTree = "<group>"; };
 		93BB1DC63369BE614480B7C025A0288D /* zfgensrc_ZFUtility.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFUtility.mm; sourceTree = "<group>"; };
 		9A21631CE83C592315C21801BC9C7196 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
@@ -99,7 +97,6 @@
 				73FD77CCC236E35B65325CA31BED8E9A /* zfgensrc_ZFModuleDemo_app.mm */,
 				EE1F24F837B3FED9137FA991FA4DC5A0 /* zfgensrc_ZFModuleDemo_impl.mm */,
 				C8B8D466EA9C1224A037403B391B1288 /* zfgensrc_ZFModuleDemo_lib.mm */,
-				8629DFE928F04273F06117A3E2F8D195 /* zfgensrc_ZFNet.mm */,
 				E01F2909E93EE78282EEBFB19C81E935 /* zfgensrc_ZFUIKit.mm */,
 				9246F3D76D738929816BD97B020D7F6B /* zfgensrc_ZFUIKit_impl.mm */,
 				F25B9CDAD805D2C11B4125F7F5B9C11D /* zfgensrc_ZFUIWidget.mm */,
@@ -247,7 +244,6 @@
 				"$(SRCROOT)/ProjectFiles/zfgensrc_ZFUtility.mm",
 				"$(SRCROOT)/ProjectFiles/zfgensrc_ZFUIKit.mm",
 				"$(SRCROOT)/ProjectFiles/zfgensrc_ZFUIWidget.mm",
-				"$(SRCROOT)/ProjectFiles/zfgensrc_ZFNet.mm",
 				"$(SRCROOT)/ProjectFiles/zfgensrc_ZF_impl.mm",
 				"$(SRCROOT)/ProjectFiles/zfgensrc_ZFCore_impl.mm",
 				"$(SRCROOT)/ProjectFiles/zfgensrc_ZFAlgorithm_impl.mm",
@@ -276,7 +272,6 @@
 				EAC1484A025D5036106B69C59C4BCFA7 /* zfgensrc_ZFModuleDemo_app.mm in Sources */,
 				C5A42445A50E2AFC7607CC6912283129 /* zfgensrc_ZFModuleDemo_impl.mm in Sources */,
 				0D571BEAF3BE966F0E05179BE4382E0A /* zfgensrc_ZFModuleDemo_lib.mm in Sources */,
-				DFDBA7225C12438AC96D23D1FB4B8B5D /* zfgensrc_ZFNet.mm in Sources */,
 				7A5FECB1718C94DFF315133FE1E32FB9 /* zfgensrc_ZFUIKit.mm in Sources */,
 				38FEF4F66EFF795535A757EAE114FE35 /* zfgensrc_ZFUIKit_impl.mm in Sources */,
 				56279E5B40E4F99A166D4B293466AD23 /* zfgensrc_ZFUIWidget.mm in Sources */,
@@ -319,7 +314,6 @@
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFUtility/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFUIKit/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFUIWidget/zfsrc",
-					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFNet/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZF_impl/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFCore_impl/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFAlgorithm_impl/zfsrc",
@@ -362,7 +356,6 @@
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFUtility/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFUIKit/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFUIWidget/zfsrc",
-					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFNet/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZF_impl/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFCore_impl/zfsrc",
 					"${SRCROOT}/../../../../../ZFFramework/ZF/ZFAlgorithm_impl/zfsrc",
