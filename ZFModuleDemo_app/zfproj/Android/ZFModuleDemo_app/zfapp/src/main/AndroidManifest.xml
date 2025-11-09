@@ -5,7 +5,7 @@
 
     <application
         android:icon="@mipmap/ic_launcher"
-        android:label="ZFModuleDemo_app"
+        android:label="@string/app_name"
         android:usesCleartextTraffic="true">
         <activity
             android:name="com.ZFFramework.ZFModuleDemo_app.Loader"
