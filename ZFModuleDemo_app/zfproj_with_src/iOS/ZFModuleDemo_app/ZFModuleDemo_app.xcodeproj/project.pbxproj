@@ -26,6 +26,7 @@
 		BAF83C8FD40984D84AA9044934CCFB9C /* zfgensrc_ZFCore.mm in Sources */ = {isa = PBXBuildFile; fileRef = 50A2B026A64256E301B930B16113FD8A /* zfgensrc_ZFCore.mm */; };
 		BDE2E3B01A3B105DB73631E1CA094FC0 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4141CE69BF1CBA43A6E8F0B14B6F4350 /* AppDelegate.mm */; };
 		C5A42445A50E2AFC7607CC6912283129 /* zfgensrc_ZFModuleDemo_impl.mm in Sources */ = {isa = PBXBuildFile; fileRef = EE1F24F837B3FED9137FA991FA4DC5A0 /* zfgensrc_ZFModuleDemo_impl.mm */; };
+		CE47A8ED66F6ECD3EA530D9DED0CF09D /* Pods_ZFModuleDemo_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6E3D43EC21916F9038CC8FA5AE4ECE /* Pods_ZFModuleDemo_app.framework */; };
 		E46DEA15939C1584CB69C7D524F8BB86 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1FFF9A0842376A9931090281622A22 /* QuartzCore.framework */; };
 		EAC1484A025D5036106B69C59C4BCFA7 /* zfgensrc_ZFModuleDemo_app.mm in Sources */ = {isa = PBXBuildFile; fileRef = 73FD77CCC236E35B65325CA31BED8E9A /* zfgensrc_ZFModuleDemo_app.mm */; };
 		FC5605980C48F88CEA779E9DF21CEA05 /* zfgensrc_ZFAlgorithm.mm in Sources */ = {isa = PBXBuildFile; fileRef = D346C47E08BDA86C8F92009162AE4661 /* zfgensrc_ZFAlgorithm.mm */; };
@@ -38,6 +39,7 @@
 		3F1FFF9A0842376A9931090281622A22 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4141CE69BF1CBA43A6E8F0B14B6F4350 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		42CBA018A23BA76009F2A677B75CCE25 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4E6E3D43EC21916F9038CC8FA5AE4ECE /* Pods_ZFModuleDemo_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZFModuleDemo_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50657D02102D799E7D6827E56C537717 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		50A2B026A64256E301B930B16113FD8A /* zfgensrc_ZFCore.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFCore.mm; sourceTree = "<group>"; };
 		58CAE40A990DA73467ABF8F799949597 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -51,7 +53,9 @@
 		93BB1DC63369BE614480B7C025A0288D /* zfgensrc_ZFUtility.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFUtility.mm; sourceTree = "<group>"; };
 		9A21631CE83C592315C21801BC9C7196 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		A7F050D54470CF3BFDA2CBBEED088358 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AC4D554A7013378736802527A90386AB /* Pods-ZFModuleDemo_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZFModuleDemo_app.debug.xcconfig"; path = "Target Support Files/Pods-ZFModuleDemo_app/Pods-ZFModuleDemo_app.debug.xcconfig"; sourceTree = "<group>"; };
 		B114D6E0C2E265773CBDA825F88D957C /* zfsrc */ = {isa = PBXFileReference; lastKnownFileType = folder; name = zfsrc; path = ../../../zfsrc; sourceTree = "<group>"; };
+		BEC31A25AD62A5BE29E978425EB5A039 /* Pods-ZFModuleDemo_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZFModuleDemo_app.release.xcconfig"; path = "Target Support Files/Pods-ZFModuleDemo_app/Pods-ZFModuleDemo_app.release.xcconfig"; sourceTree = "<group>"; };
 		C55B067075E632758D1AE65E6F2DD508 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8B8D466EA9C1224A037403B391B1288 /* zfgensrc_ZFModuleDemo_lib.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFModuleDemo_lib.mm; sourceTree = "<group>"; };
 		D346C47E08BDA86C8F92009162AE4661 /* zfgensrc_ZFAlgorithm.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = zfgensrc_ZFAlgorithm.mm; sourceTree = "<group>"; };
@@ -70,6 +74,7 @@
 				2D645B7B0F0345A689A05DDD960755F1 /* AVFoundation.framework in Frameworks */,
 				06FC83A7537C3E981A9EEA847AE18621 /* CoreGraphics.framework in Frameworks */,
 				23324F616350F71248CE994CA60CF236 /* Foundation.framework in Frameworks */,
+				CE47A8ED66F6ECD3EA530D9DED0CF09D /* Pods_ZFModuleDemo_app.framework in Frameworks */,
 				E46DEA15939C1584CB69C7D524F8BB86 /* QuartzCore.framework in Frameworks */,
 				3E6623B45256902E79CD74D60653A1F7 /* UIKit.framework in Frameworks */,
 			);
@@ -110,10 +115,20 @@
 			isa = PBXGroup;
 			children = (
 				ADBA738936F48CF6C14D6A2EAC517BC3 /* Frameworks */,
+				71B170AF6A09ECA9892BB1F940DA132D /* Pods */,
 				E8598DD722037477FD72A48D5212ABEC /* Products */,
 				2149912C23A257100F636E5057910E1F /* ProjectFiles */,
 				F1E93A0C8D432869AC0EAFBDB9631E31 /* ZFModuleDemo_app */,
 			);
+			sourceTree = "<group>";
+		};
+		71B170AF6A09ECA9892BB1F940DA132D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC4D554A7013378736802527A90386AB /* Pods-ZFModuleDemo_app.debug.xcconfig */,
+				BEC31A25AD62A5BE29E978425EB5A039 /* Pods-ZFModuleDemo_app.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		ADBA738936F48CF6C14D6A2EAC517BC3 /* Frameworks */ = {
@@ -122,6 +137,7 @@
 				81BC6B4B561D79ED4698B96687C427B6 /* AVFoundation.framework */,
 				58CAE40A990DA73467ABF8F799949597 /* CoreGraphics.framework */,
 				A7F050D54470CF3BFDA2CBBEED088358 /* Foundation.framework */,
+				4E6E3D43EC21916F9038CC8FA5AE4ECE /* Pods_ZFModuleDemo_app.framework */,
 				3F1FFF9A0842376A9931090281622A22 /* QuartzCore.framework */,
 				057350DF9833D09D2A7C09A7D4901F73 /* UIKit.framework */,
 			);
@@ -151,6 +167,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAC32F17B6797379D61E2B987168C686 /* Build configuration list for PBXNativeTarget "ZFModuleDemo_app" */;
 			buildPhases = (
+				F555AB1DA791080691347BDD95DC3114 /* [CP] Check Pods Manifest.lock */,
 				E76CE63F125C7325AC24AA00EC6925D2 /* ZFSetup */,
 				5D3F7BBDA4B37B5D3AD37EA4FCCDAA35 /* Sources */,
 				1F2A3ED4A20CC4190D8AE349BDFFB898 /* Frameworks */,
@@ -255,6 +272,28 @@
 			shellPath = /bin/sh;
 			shellScript = "sh ${SRCROOT}/ZFModuleDemo_app.xcodeproj/zfsetup.sh ${SRCROOT} ${CONFIGURATION_BUILD_DIR} ${CONTENTS_FOLDER_PATH}\n";
 		};
+		F555AB1DA791080691347BDD95DC3114 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZFModuleDemo_app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -285,6 +324,7 @@
 /* Begin XCBuildConfiguration section */
 		02300C4B65B0533E2E399A09A24EDCEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC4D554A7013378736802527A90386AB /* Pods-ZFModuleDemo_app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -305,7 +345,7 @@
 					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZFFramework.ZFModuleDemo_app;
-				PRODUCT_NAME = ZFModuleDemo_app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"${SRCROOT}/../../../zfsrc",
@@ -327,6 +367,7 @@
 		};
 		41578E2A2FD13BCBB1A0EAA0A994749B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEC31A25AD62A5BE29E978425EB5A039 /* Pods-ZFModuleDemo_app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -347,7 +388,7 @@
 					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZFFramework.ZFModuleDemo_app;
-				PRODUCT_NAME = ZFModuleDemo_app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"${SRCROOT}/../../../zfsrc",
