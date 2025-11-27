@@ -21,3 +21,25 @@ dependencyResolutionManagement {
 
 rootProject.name = "ZFModuleDemo_app"
 include ':zfapp'
+
+def ZF_ROOT_PATH = file('../../../../../ZFFramework').absolutePath
+
+def zfprojConfig_xml(owner, ZF_ROOT_PATH, type, name) {
+    if (file("${ZF_ROOT_PATH}/${type}/${name}/zfproj/Android/${name}/zflib/zfprojConfig.xml").exists()) {
+        owner.include ":zfprojConfig:${name}"
+        owner.project(":zfprojConfig:${name}").projectDir = new File("${ZF_ROOT_PATH}/${type}/${name}/zfproj/Android/${name}/zfprojConfigHelper")
+    }
+}
+
+zfprojConfig_xml(this, ZF_ROOT_PATH, 'ZF', 'ZFCore')
+zfprojConfig_xml(this, ZF_ROOT_PATH, 'ZF', 'ZFAlgorithm')
+zfprojConfig_xml(this, ZF_ROOT_PATH, 'ZF', 'ZFUtility')
+zfprojConfig_xml(this, ZF_ROOT_PATH, 'ZF', 'ZFUIKit')
+zfprojConfig_xml(this, ZF_ROOT_PATH, 'ZF', 'ZFUIWidget')
+zfprojConfig_xml(this, ZF_ROOT_PATH, 'ZF', 'ZF_impl')
+zfprojConfig_xml(this, ZF_ROOT_PATH, 'ZF', 'ZFCore_impl')
+zfprojConfig_xml(this, ZF_ROOT_PATH, 'ZF', 'ZFAlgorithm_impl')
+zfprojConfig_xml(this, ZF_ROOT_PATH, 'ZF', 'ZFUIKit_impl')
+zfprojConfig_xml(this, ZF_ROOT_PATH, 'ZFModule', 'ZFModuleDemo_lib')
+zfprojConfig_xml(this, ZF_ROOT_PATH, 'ZFModule', 'ZFModuleDemo_impl')
+
