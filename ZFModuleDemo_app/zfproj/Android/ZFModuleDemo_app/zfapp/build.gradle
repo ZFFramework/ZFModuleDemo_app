@@ -69,17 +69,17 @@ android {
 
 dependencies {
     implementation fileTree(includes: ['*.jar'], dir: 'libs')
-    implementation fileTree(dir: ZF_ROOT_PATH + '/_release/Android/module/ZFCore/src/main/libs', includes: ['*.jar'])
-    implementation fileTree(dir: ZF_ROOT_PATH + '/_release/Android/module/ZFAlgorithm/src/main/libs', includes: ['*.jar'])
-    implementation fileTree(dir: ZF_ROOT_PATH + '/_release/Android/module/ZFUtility/src/main/libs', includes: ['*.jar'])
-    implementation fileTree(dir: ZF_ROOT_PATH + '/_release/Android/module/ZFUIKit/src/main/libs', includes: ['*.jar'])
-    implementation fileTree(dir: ZF_ROOT_PATH + '/_release/Android/module/ZFUIWidget/src/main/libs', includes: ['*.jar'])
-    implementation fileTree(dir: ZF_ROOT_PATH + '/_release/Android/module/ZF_impl/src/main/libs', includes: ['*.jar'])
-    implementation fileTree(dir: ZF_ROOT_PATH + '/_release/Android/module/ZFCore_impl/src/main/libs', includes: ['*.jar'])
-    implementation fileTree(dir: ZF_ROOT_PATH + '/_release/Android/module/ZFAlgorithm_impl/src/main/libs', includes: ['*.jar'])
-    implementation fileTree(dir: ZF_ROOT_PATH + '/_release/Android/module/ZFUIKit_impl/src/main/libs', includes: ['*.jar'])
-    implementation fileTree(dir: ZF_ROOT_PATH + '/_release/Android/module/ZFModuleDemo_lib/src/main/libs', includes: ['*.jar'])
-    implementation fileTree(dir: ZF_ROOT_PATH + '/_release/Android/module/ZFModuleDemo_impl/src/main/libs', includes: ['*.jar'])
+    implementation fileTree(includes: ['*.aar'], dir: ZF_ROOT_PATH + '/_release/Android/module/ZFCore/aar')
+    implementation fileTree(includes: ['*.aar'], dir: ZF_ROOT_PATH + '/_release/Android/module/ZFAlgorithm/aar')
+    implementation fileTree(includes: ['*.aar'], dir: ZF_ROOT_PATH + '/_release/Android/module/ZFUtility/aar')
+    implementation fileTree(includes: ['*.aar'], dir: ZF_ROOT_PATH + '/_release/Android/module/ZFUIKit/aar')
+    implementation fileTree(includes: ['*.aar'], dir: ZF_ROOT_PATH + '/_release/Android/module/ZFUIWidget/aar')
+    implementation fileTree(includes: ['*.aar'], dir: ZF_ROOT_PATH + '/_release/Android/module/ZF_impl/aar')
+    implementation fileTree(includes: ['*.aar'], dir: ZF_ROOT_PATH + '/_release/Android/module/ZFCore_impl/aar')
+    implementation fileTree(includes: ['*.aar'], dir: ZF_ROOT_PATH + '/_release/Android/module/ZFAlgorithm_impl/aar')
+    implementation fileTree(includes: ['*.aar'], dir: ZF_ROOT_PATH + '/_release/Android/module/ZFUIKit_impl/aar')
+    implementation fileTree(includes: ['*.aar'], dir: ZF_ROOT_PATH + '/_release/Android/module/ZFModuleDemo_lib/aar')
+    implementation fileTree(includes: ['*.aar'], dir: ZF_ROOT_PATH + '/_release/Android/module/ZFModuleDemo_impl/aar')
 }
 
 if (file(this.projectDir.getAbsolutePath() + '/zfprojConfig.gradle').exists()) {
