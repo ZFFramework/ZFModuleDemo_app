@@ -19,8 +19,13 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ZFModuleDemo_app"
+rootProject.name = 'ZFModuleDemo_app'
 include ':zfapp'
+
+if (file('./zfapp/zfprojConfig/zfprojConfig.xml').exists()) {
+    include ':zfprojConfig:ZFModuleDemo_app'
+    project(':zfprojConfig:ZFModuleDemo_app').projectDir = new File(file('./zfprojConfigHelper').absolutePath)
+}
 
 def ZF_ROOT_PATH = file('../../../../../ZFFramework').absolutePath
 
