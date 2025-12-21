@@ -12,11 +12,27 @@ sh "${iOS_SRCROOT}/../../../../zfsetup.sh"
 
 ZF_ROOT_PATH=${iOS_SRCROOT}/../../../../../ZFFramework
 
+PLIST_DST_PATH=${iOS_SRCROOT}/Info_tmp.plist
+cp -f "${iOS_SRCROOT}/Info_base.plist" "$PLIST_DST_PATH" >/dev/null 2>&1
+sh "$ZF_ROOT_PATH/tools/spec/iOS/plist_merge.sh" "$PLIST_DST_PATH" "$ZF_ROOT_PATH/ZF/ZFCore/zfproj/iOS/ZFCore/zfprojConfig.plist"
+sh "$ZF_ROOT_PATH/tools/spec/iOS/plist_merge.sh" "$PLIST_DST_PATH" "$ZF_ROOT_PATH/ZF/ZFCore/zfproj/iOS/ZFCore/zfprojConfig.plist"
+sh "$ZF_ROOT_PATH/tools/spec/iOS/plist_merge.sh" "$PLIST_DST_PATH" "$ZF_ROOT_PATH/ZF/ZFAlgorithm/zfproj/iOS/ZFAlgorithm/zfprojConfig.plist"
+sh "$ZF_ROOT_PATH/tools/spec/iOS/plist_merge.sh" "$PLIST_DST_PATH" "$ZF_ROOT_PATH/ZF/ZFUtility/zfproj/iOS/ZFUtility/zfprojConfig.plist"
+sh "$ZF_ROOT_PATH/tools/spec/iOS/plist_merge.sh" "$PLIST_DST_PATH" "$ZF_ROOT_PATH/ZF/ZFUIKit/zfproj/iOS/ZFUIKit/zfprojConfig.plist"
+sh "$ZF_ROOT_PATH/tools/spec/iOS/plist_merge.sh" "$PLIST_DST_PATH" "$ZF_ROOT_PATH/ZF/ZFUIWidget/zfproj/iOS/ZFUIWidget/zfprojConfig.plist"
+sh "$ZF_ROOT_PATH/tools/spec/iOS/plist_merge.sh" "$PLIST_DST_PATH" "$ZF_ROOT_PATH/ZF/ZF_impl/zfproj/iOS/ZF_impl/zfprojConfig.plist"
+sh "$ZF_ROOT_PATH/tools/spec/iOS/plist_merge.sh" "$PLIST_DST_PATH" "$ZF_ROOT_PATH/ZF/ZFCore_impl/zfproj/iOS/ZFCore_impl/zfprojConfig.plist"
+sh "$ZF_ROOT_PATH/tools/spec/iOS/plist_merge.sh" "$PLIST_DST_PATH" "$ZF_ROOT_PATH/ZF/ZFAlgorithm_impl/zfproj/iOS/ZFAlgorithm_impl/zfprojConfig.plist"
+sh "$ZF_ROOT_PATH/tools/spec/iOS/plist_merge.sh" "$PLIST_DST_PATH" "$ZF_ROOT_PATH/ZF/ZFUIKit_impl/zfproj/iOS/ZFUIKit_impl/zfprojConfig.plist"
+sh "$ZF_ROOT_PATH/tools/spec/iOS/plist_merge.sh" "$PLIST_DST_PATH" "$ZF_ROOT_PATH/ZF/ZFModuleDemo_lib/zfproj/iOS/ZFModuleDemo_lib/zfprojConfig.plist"
+sh "$ZF_ROOT_PATH/tools/spec/iOS/plist_merge.sh" "$PLIST_DST_PATH" "$ZF_ROOT_PATH/ZF/ZFModuleDemo_impl/zfproj/iOS/ZFModuleDemo_impl/zfprojConfig.plist"
+sh "$ZF_ROOT_PATH/tools/spec/iOS/plist_merge.sh" "$PLIST_DST_PATH" "${iOS_SRCROOT}/zfprojConfig.plist"
+mv -f "$PLIST_DST_PATH" "${iOS_SRCROOT}/ProjectFiles/Info.plist"
+
 COMPILE_DST_PATH=${iOS_SRCROOT}/ProjectFiles
-sh $ZF_ROOT_PATH/tools/common/unity_build.sh "${COMPILE_DST_PATH}/zfgensrc_ZFModuleDemo_app.mm" "${iOS_SRCROOT}/../../../zfsrc"
+sh "$ZF_ROOT_PATH/tools/common/unity_build.sh" "${COMPILE_DST_PATH}/zfgensrc_ZFModuleDemo_app.mm" "${iOS_SRCROOT}/../../../zfsrc"
 
 RES_DST_PATH=${iOS_CONFIGURATION_BUILD_DIR}/${iOS_CONTENTS_FOLDER_PATH}/zfres
-
 sh "$ZF_ROOT_PATH/tools/util/copy_res.sh" "$ZF_ROOT_PATH/_release/iOS/module/ZFCore/zfres" "$RES_DST_PATH"
 sh "$ZF_ROOT_PATH/tools/util/copy_res.sh" "$ZF_ROOT_PATH/_release/iOS/module/ZFAlgorithm/zfres" "$RES_DST_PATH"
 sh "$ZF_ROOT_PATH/tools/util/copy_res.sh" "$ZF_ROOT_PATH/_release/iOS/module/ZFUtility/zfres" "$RES_DST_PATH"
@@ -28,6 +44,5 @@ sh "$ZF_ROOT_PATH/tools/util/copy_res.sh" "$ZF_ROOT_PATH/_release/iOS/module/ZFA
 sh "$ZF_ROOT_PATH/tools/util/copy_res.sh" "$ZF_ROOT_PATH/_release/iOS/module/ZFUIKit_impl/zfres" "$RES_DST_PATH"
 sh "$ZF_ROOT_PATH/tools/util/copy_res.sh" "$ZF_ROOT_PATH/_release/iOS/module/ZFModuleDemo_lib/zfres" "$RES_DST_PATH"
 sh "$ZF_ROOT_PATH/tools/util/copy_res.sh" "$ZF_ROOT_PATH/_release/iOS/module/ZFModuleDemo_impl/zfres" "$RES_DST_PATH"
-
 sh "$ZF_ROOT_PATH/tools/util/copy_res.sh" "${iOS_SRCROOT}/../../../zfres" "$RES_DST_PATH"
 

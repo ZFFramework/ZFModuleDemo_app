@@ -255,6 +255,7 @@
 			);
 			name = ZFSetup;
 			outputPaths = (
+				"$(SRCROOT)/ProjectFiles/Info.plist",
 				"$(SRCROOT)/ProjectFiles/zfgensrc_ZFModuleDemo_app.mm",
 				"$(SRCROOT)/ProjectFiles/zfgensrc_ZFCore.mm",
 				"$(SRCROOT)/ProjectFiles/zfgensrc_ZFAlgorithm.mm",
