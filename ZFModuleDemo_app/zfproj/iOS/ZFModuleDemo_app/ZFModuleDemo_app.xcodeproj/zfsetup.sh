@@ -24,8 +24,8 @@ sh "$ZF_ROOT_PATH/tools/spec/iOS/plist_merge.sh" "$PLIST_DST_PATH" "$ZF_ROOT_PAT
 sh "$ZF_ROOT_PATH/tools/spec/iOS/plist_merge.sh" "$PLIST_DST_PATH" "$ZF_ROOT_PATH/ZF/ZFCore_impl/zfproj/iOS/ZFCore_impl/zfprojConfig.plist"
 sh "$ZF_ROOT_PATH/tools/spec/iOS/plist_merge.sh" "$PLIST_DST_PATH" "$ZF_ROOT_PATH/ZF/ZFAlgorithm_impl/zfproj/iOS/ZFAlgorithm_impl/zfprojConfig.plist"
 sh "$ZF_ROOT_PATH/tools/spec/iOS/plist_merge.sh" "$PLIST_DST_PATH" "$ZF_ROOT_PATH/ZF/ZFUIKit_impl/zfproj/iOS/ZFUIKit_impl/zfprojConfig.plist"
-sh "$ZF_ROOT_PATH/tools/spec/iOS/plist_merge.sh" "$PLIST_DST_PATH" "$ZF_ROOT_PATH/ZF/ZFModuleDemo_lib/zfproj/iOS/ZFModuleDemo_lib/zfprojConfig.plist"
-sh "$ZF_ROOT_PATH/tools/spec/iOS/plist_merge.sh" "$PLIST_DST_PATH" "$ZF_ROOT_PATH/ZF/ZFModuleDemo_impl/zfproj/iOS/ZFModuleDemo_impl/zfprojConfig.plist"
+sh "$ZF_ROOT_PATH/tools/spec/iOS/plist_merge.sh" "$PLIST_DST_PATH" "$ZF_ROOT_PATH/ZFModule/ZFModuleDemo_lib/zfproj/iOS/ZFModuleDemo_lib/zfprojConfig.plist"
+sh "$ZF_ROOT_PATH/tools/spec/iOS/plist_merge.sh" "$PLIST_DST_PATH" "$ZF_ROOT_PATH/ZFModule/ZFModuleDemo_impl/zfproj/iOS/ZFModuleDemo_impl/zfprojConfig.plist"
 sh "$ZF_ROOT_PATH/tools/spec/iOS/plist_merge.sh" "$PLIST_DST_PATH" "${iOS_SRCROOT}/zfprojConfig.plist"
 mv -f "$PLIST_DST_PATH" "${iOS_SRCROOT}/ProjectFiles/Info.plist"
 
