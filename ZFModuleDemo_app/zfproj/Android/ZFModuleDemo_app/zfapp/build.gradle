@@ -75,7 +75,7 @@ android {
 dependencies {
     implementation fileTree(includes: ['*.jar'], dir: 'libs')
     if (file('./zfprojConfig/zfprojConfig.xml').exists()) {
-        implementation project(':zfprojConfig:ZFModuleDemo_app')
+        implementation project(':zfprojConfig_ZFModuleDemo_app')
     }
     implementation fileTree(includes: ['*.aar'], dir: ZF_ROOT_PATH + '/_release/Android/module/ZFCore/aar')
     implementation fileTree(includes: ['*.aar'], dir: ZF_ROOT_PATH + '/_release/Android/module/ZFAlgorithm/aar')
