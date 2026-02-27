@@ -36,7 +36,7 @@ function(ZFAddLib ZF_LIB_NAME_)
     target_include_directories(ZFModuleDemo_app PRIVATE "${ZF_ROOT_PATH}/_release/cmake/all/include")
 
     target_link_directories(ZFModuleDemo_app PUBLIC "${ZF_ROOT_PATH}/_release/cmake/module/${ZF_LIB_NAME_}/lib")
-    target_link_libraries(ZFModuleDemo_app ${ZF_LIB_NAME_})
+    target_link_libraries(ZFModuleDemo_app PRIVATE ${ZF_LIB_NAME_})
 
     install(
         DIRECTORY "${ZF_ROOT_PATH}/_release/cmake/module/${ZF_LIB_NAME_}/lib/"

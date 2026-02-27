@@ -36,5 +36,5 @@ set_target_properties(ZFModuleDemo_app PROPERTIES LINKER_LANGUAGE CXX)
 
 find_library(log-lib log)
 find_library(android-lib android)
-target_link_libraries(ZFModuleDemo_app ${android-lib} ${log-lib})
+target_link_libraries(ZFModuleDemo_app PRIVATE ${android-lib} ${log-lib})
 
