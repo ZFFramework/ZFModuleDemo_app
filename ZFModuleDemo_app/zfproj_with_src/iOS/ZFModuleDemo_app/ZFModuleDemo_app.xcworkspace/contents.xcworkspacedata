@@ -5,6 +5,39 @@
       location = "group:ZFModuleDemo_app.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Pods/Pods.xcodeproj">
+      location = "group:ZFModuleDemo_app_zfprojConfig.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../../ZFFramework/ZF/ZFCore/zfproj/iOS/ZFCore/ZFCore_zfprojConfig.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../../ZFFramework/ZF/ZFAlgorithm/zfproj/iOS/ZFAlgorithm/ZFAlgorithm_zfprojConfig.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../../ZFFramework/ZF/ZFUtility/zfproj/iOS/ZFUtility/ZFUtility_zfprojConfig.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../../ZFFramework/ZF/ZFUIKit/zfproj/iOS/ZFUIKit/ZFUIKit_zfprojConfig.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../../ZFFramework/ZF/ZFUIWidget/zfproj/iOS/ZFUIWidget/ZFUIWidget_zfprojConfig.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../../ZFFramework/ZF/ZF_impl/zfproj/iOS/ZF_impl/ZF_impl_zfprojConfig.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../../ZFFramework/ZF/ZFCore_impl/zfproj/iOS/ZFCore_impl/ZFCore_impl_zfprojConfig.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../../ZFFramework/ZF/ZFAlgorithm_impl/zfproj/iOS/ZFAlgorithm_impl/ZFAlgorithm_impl_zfprojConfig.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../../ZFFramework/ZF/ZFUIKit_impl/zfproj/iOS/ZFUIKit_impl/ZFUIKit_impl_zfprojConfig.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../../ZFFramework/ZFModule/ZFModuleDemo_lib/zfproj/iOS/ZFModuleDemo_lib/ZFModuleDemo_lib_zfprojConfig.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../../ZFFramework/ZFModule/ZFModuleDemo_impl/zfproj/iOS/ZFModuleDemo_impl/ZFModuleDemo_impl_zfprojConfig.xcodeproj">
    </FileRef>
 </Workspace>
