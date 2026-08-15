@@ -20,12 +20,12 @@ jobs:
     - uses: actions/checkout@v4
 
     - name: Setup Qt
-      uses: jurplel/install-qt-action@master
+      uses: jurplel/install-qt-action@v4
       with:
         host: mac
         target: desktop
         modules: qtwebengine
-        version: '>=6.9.2' # https://qt-project.atlassian.net/browse/QTBUG-137687
+        version: '6.9.*' # https://qt-project.atlassian.net/browse/QTBUG-137687
 
     - name: ZFSetup
       run: |
